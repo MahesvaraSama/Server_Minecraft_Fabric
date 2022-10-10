@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  server_minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: "server_minecraft"
+    ports:
+    # expose the Minecraft server port outside of container
+    - 25565:25565
+    environment:
+      # REQUIRED for all types
+      EULA: "TRUE"
+      # Set server type (vs the default of vanilla)
+      TYPE: FORGE
+      VERSION: 1.19.2
+      FORGEVERSION: 43.1.34
+      ENABLE_ROLLING_LOGS: "true"
+      DEBUG: "true"
+      TZ: "Europe/Paris"
+      DIFFICULTY: "hard"
+      OPS: "Mahesvara_Sama"
+      MAX_PLAYERS: 10
+      OTD: "Welcome to Kingdom"
+      ONLINE_MODE: FALSE
+      ENABLE_STATUS: FALSE
+      SERVER_NAME: "Kingdom-Minecraft"
+    volumes:
+    # use a named, managed volume for data volume
+    - ./data:/data
+    # attach local host directory "mods" in same directory as this compose file
+    # all mods in this directory get copied into /data/mods at startup
+    - ./mods:/mods:ro
+    - ./datapacks:/datapacks:ro
+volumes:
+  # declared the named volume, but use default/local storage engine
+  mc_forge: {}
