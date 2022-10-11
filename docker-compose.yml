@@ -22,8 +22,8 @@ services:
       MAX_PLAYERS: 10
       OTD: "Welcome to Nazarick"
       ONLINE_MODE: "FALSE"
-      SERVER_NAME: "Nazarick-Minecraft"
-      VIEW_DISTANCE: "24"
+      SERVER_NAME: "Nazarick-Kingdom-ST"
+      VIEW_DISTANCE: "18"
       ICON: "https://cdn.discordapp.com/attachments/1020986021678157834/1029389926283882567/Nazarick.png"
     volumes:
     # use a named, managed volume for data volume
