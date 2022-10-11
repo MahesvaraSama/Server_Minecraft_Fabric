@@ -18,7 +18,6 @@ services:
       DEBUG: "true"
       TZ: "Europe/Paris"
       DIFFICULTY: "hard"
-      OPS_FILE: "./ops.json"
       MAX_PLAYERS: 10
       OTD: "Welcome to Nazarick"
       ONLINE_MODE: "FALSE"
@@ -31,4 +30,3 @@ services:
     # attach local host directory "mods" in same directory as this compose file
     # all mods in this directory get copied into /data/mods at startup
     - ./mods:/mods:ro
- 
