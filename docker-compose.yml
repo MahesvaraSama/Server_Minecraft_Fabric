@@ -18,12 +18,12 @@ services:
       DEBUG: "true"
       TZ: "Europe/Paris"
       DIFFICULTY: "hard"
-      OPS: Mahesvara_Sama
+      OPS_FILE: "./ops.json"
       MAX_PLAYERS: 10
       OTD: "Welcome to Nazarick"
       ONLINE_MODE: "FALSE"
-      SERVER_NAME: "Nazarick-Kingdom-ST"
-      VIEW_DISTANCE: "16"
+      SERVER_NAME: "Nazarick-Kingdom"
+      VIEW_DISTANCE: "32"
       ICON: "https://cdn.discordapp.com/attachments/1020986021678157834/1029389926283882567/Nazarick.png"
     volumes:
     # use a named, managed volume for data volume
@@ -31,7 +31,4 @@ services:
     # attach local host directory "mods" in same directory as this compose file
     # all mods in this directory get copied into /data/mods at startup
     - ./mods:/mods:ro
-volumes:
-  # declared the named volume, but use default/local storage engine
-  mc_forge: {}
  
