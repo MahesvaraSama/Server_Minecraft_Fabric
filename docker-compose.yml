@@ -20,17 +20,20 @@ services:
       DIFFICULTY: "hard"
       OPS: "Mahesvara_Sama"
       MAX_PLAYERS: 10
-      OTD: "Welcome to Kingdom"
+      OTD: "Welcome to Nazarick"
       ONLINE_MODE: "FALSE"
       ENABLE_STATUS: "FALSE"
-      SERVER_NAME: "Kingdom-Minecraft"
+      SERVER_NAME: "Nazarick-Minecraft"
+      VIEW_DISTANCE: "48"
+      ICON: ./images/nazarick.png
     volumes:
     # use a named, managed volume for data volume
     - ./data:/data
     # attach local host directory "mods" in same directory as this compose file
     # all mods in this directory get copied into /data/mods at startup
     - ./mods:/mods:ro
-    - ./datapacks:/datapacks:ro
+    - ./datapacks:/data/world/datapacks:ro
 volumes:
   # declared the named volume, but use default/local storage engine
   mc_forge: {}
+ 
