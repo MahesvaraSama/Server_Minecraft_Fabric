@@ -18,13 +18,12 @@ services:
       DEBUG: "true"
       TZ: "Europe/Paris"
       DIFFICULTY: "hard"
-      OPS: "Mahesvara_Sama"
+      OPS: Mahesvara_Sama
       MAX_PLAYERS: 10
       OTD: "Welcome to Nazarick"
-      ONLINE_MODE: "FALSE"
       ENABLE_STATUS: "FALSE"
       SERVER_NAME: "Nazarick-Minecraft"
-      VIEW_DISTANCE: "48"
+      VIEW_DISTANCE: "32"
       ICON: ./images/nazarick.png
     volumes:
     # use a named, managed volume for data volume
