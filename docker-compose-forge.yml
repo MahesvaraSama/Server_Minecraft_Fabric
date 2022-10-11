@@ -21,8 +21,8 @@ services:
       OPS: "Mahesvara_Sama"
       MAX_PLAYERS: 10
       OTD: "Welcome to Kingdom"
-      ONLINE_MODE: FALSE
-      ENABLE_STATUS: FALSE
+      ONLINE_MODE: "FALSE"
+      ENABLE_STATUS: "FALSE"
       SERVER_NAME: "Kingdom-Minecraft"
     volumes:
     # use a named, managed volume for data volume
