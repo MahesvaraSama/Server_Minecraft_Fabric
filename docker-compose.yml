@@ -10,7 +10,6 @@ services:
       EULA: "TRUE"
       TYPE: FABRIC
       VERSION: 1.19.2
-      FORGEVERSION: 43.1.34
       ENABLE_ROLLING_LOGS: "true"
       DEBUG: "true"
       TZ: "Europe/Paris"
