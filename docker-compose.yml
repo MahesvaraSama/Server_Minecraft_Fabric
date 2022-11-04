@@ -8,7 +8,7 @@ services:
     - 25565:25565
     environment:
       EULA: "TRUE"
-      TYPE: FORGE
+      TYPE: FABRIC
       VERSION: 1.19.2
       FORGEVERSION: 43.1.34
       ENABLE_ROLLING_LOGS: "true"
@@ -16,7 +16,6 @@ services:
       TZ: "Europe/Paris"
       DIFFICULTY: "hard"
       MAX_PLAYERS: 10
-      OTD: "Welcome to Nazarick"
       ONLINE_MODE: "FALSE"
       SERVER_NAME: "Nazarick-Kingdom"
       VIEW_DISTANCE: "32"
