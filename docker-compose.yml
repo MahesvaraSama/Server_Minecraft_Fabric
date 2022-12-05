@@ -14,13 +14,11 @@ services:
       DEBUG: "true"
       TZ: "Europe/Paris"
       DIFFICULTY: "hard"
-      MAX_PLAYERS: 10
-      ONLINE_MODE: "FALSE"
+      MAX_PLAYERS: 15
       SERVER_NAME: "Nazarick-Kingdom"
       VIEW_DISTANCE: "32"
-      INIT_MEMORY: "2G"
-      MAX_MEMORY: "4G"
-      #ICON: "https://cdn.discordapp.com/attachments/1020986021678157834/1029389926283882567/Nazarick.png"
+      INIT_MEMORY: "6G"
+      MAX_MEMORY: "12G"
     volumes:
     - ./data:/data
     - ./mods:/mods:ro
