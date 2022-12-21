@@ -3,7 +3,7 @@ version: "3.8"
 services:
   server_minecraft:
     image: itzg/minecraft-server:latest
-    container_name: "server_minecraft"
+    container_name: "server_minecraft_fabric"
     ports:
     - 25565:25565
     environment:
@@ -17,8 +17,8 @@ services:
       MAX_PLAYERS: 15
       SERVER_NAME: "Nazarick-Kingdom"
       VIEW_DISTANCE: "32"
-      INIT_MEMORY: "6G"
-      MAX_MEMORY: "12G"
+      INIT_MEMORY: "8G"
+      MAX_MEMORY: "16G"
     volumes:
     - ./data:/data
     - ./mods:/mods:ro
