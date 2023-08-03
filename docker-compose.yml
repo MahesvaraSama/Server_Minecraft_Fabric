@@ -9,13 +9,13 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: FABRIC
-      VERSION: 1.19.2
+      VERSION: 1.20.1
       ENABLE_ROLLING_LOGS: "true"
       DEBUG: "true"
       TZ: "Europe/Paris"
       DIFFICULTY: "hard"
       MAX_PLAYERS: 15
-      SERVER_NAME: "Nazarick-Kingdom"
+      SERVER_NAME: "Capybara-Kingdom"
       VIEW_DISTANCE: "32"
       INIT_MEMORY: "8G"
       MAX_MEMORY: "16G"
